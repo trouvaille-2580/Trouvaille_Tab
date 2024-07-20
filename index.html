@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/qweather-icons@1.6.0/font/qweather-icons.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Trouvailleの导航页</title>
+</head>
+
+<body>
+    <video src="bin/bg.mp4" class="bg" muted loop autoplay></video>
+    <header>
+        <div class="h">
+            <h1 class="he">Trouvaille</h1>
+            <h1 class="hc">の导航页</h1>
+            <div class="search">
+                <input type="search" name="sip" id="search-input" placeholder="Type to search." size="30" required>
+                <button class="searchbtn" onclick="search()"><ion-icon name="search"></ion-icon></button>
+            </div>
+        </div>
+        <div class="day">
+            <h2 id="day1" class="day1"></h2>
+            <h2 id="day2" class="day2"></h2>
+            <h2 id="day3" class="day3"></h2>
+        </div>
+    </header>
+    <main>
+        <div class="padding">
+            <div id="time-hour" class="text"></div>
+            <div class="time-temp">:</div>
+            <div id="time-minute" class="text"></div>
+        </div>
+        <div class="padding-bottom">
+            <div id="time-year" class="text"></div>
+            <div class="time-ltemp">-</div>
+            <div id="time-month" class="text"></div>
+            <div class="time-ltemp">-</div>
+            <div id="time-day" class="text"></div>
+        </div>
+        <p id="text"></p>
+        <div class="weather">
+            <div id="ww_d1098ce1e6f6c" v='1.3' loc='id'
+                a='{"t":"horizontal","lang":"zh","sl_lpl":1,"ids":["wl11460"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_nme":3,"el_whr":3}'>
+                <a href="https://weatherwidget.org/" id="ww_d1098ce1e6f6c_u" target="_blank">Weather widget html</a>
+            </div>
+        </div>
+        <script async src="https://app2.weatherwidget.org/js/?id=ww_d1098ce1e6f6c"></script>
+    </main>
+    <footer>
+        <div class="slticon"><ion-icon name="home-outline" id="slticon"></ion-icon></div>
+        <ul>
+            <li>
+                <span class="icon"><ion-icon name="folder-open"></ion-icon></span>
+                <span class="text">storage</span>
+            </li>
+            <li>
+                <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
+                <span class="text">chat</span>
+            </li>
+            <li>
+                <span class="icon"><ion-icon name="tv"></ion-icon></span>
+                <span class="text">media</span>
+            </li>
+            <li>
+                <span class="icon"><ion-icon name="create"></ion-icon></span>
+                <span class="text">note</span>
+            </li>
+            <li>
+                <span class="icon"><ion-icon name="cloud-download"></ion-icon></span>
+                <span class="text">download</span>
+            </li>
+            <li>
+                <span class="icon"><ion-icon name="library"></ion-icon></span>
+                <span class="text">books</span>
+            </li>
+            <li>
+                <span class="icon"><ion-icon name="newspaper"></ion-icon></span>
+                <span class="text">blog</span>
+            </li>
+            <span class="cut"></span>
+            <li>
+                <span class="icon"><ion-icon name="logo-docker"></ion-icon></span>
+                <span class="text">docker</span>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/time.js"></script>
+</body>
+
+</html>

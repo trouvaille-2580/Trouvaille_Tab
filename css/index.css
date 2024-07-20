@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "aller";
+    src: url("/bin/font/aller/Aller_Bd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "torus";
+    src: url("/bin/font/torus/Torus-Bold.otf") format("opentype"),
+        url("/bin/font/torus/Torus-Heavy.otf") format("opentype"),
+        url("/bin/font/torus/Torus-Light.otf") format("opentype"),
+        url("/bin/font/torus/Torus-Regular.otf") format("opentype"),
+        url("/bin/font/torus/Torus-SemiBold.otf") format("opentype"),
+        url("/bin/font/torus/Torus-Thin.otf") format("opentype");
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+header {
+    margin: 20px;
+    padding: 15px;
+    margin-top: 0;
+    font-family: "aller";
+    color: #449fff;
+}
+
+header .h {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+header .he {
+    font-size: 80px;
+    text-shadow: 0 0 20px #42a5f5;
+}
+
+header .hc {
+    margin-top: auto;
+    width: 370px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+header .h .search {
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+header .h .searchbtn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+header .h .searchbtn:hover {
+    cursor: pointer;
+}
+
+header .h .search input {
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #c5c5c5;
+    background: none;
+    color: #fff;
+    font-family: system-ui;
+}
+
+header .h .search input:focus {
+    outline: none;
+    border-bottom: 1px solid #42a5f5;
+}
+
+main {
+    height: 50vh;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    font-family: "aller";
+    font-weight: lighter;
+}
+
+.day .day1 {
+    padding-left: 20px;
+    font-size: 30px;
+    position: relative;
+    animation: day 10s linear infinite;
+}
+
+.day .day2 {
+    padding-left: 5px;
+    font-size: 20px;
+    color: #bbdefb;
+    position: relative;
+    text-shadow: 5px 5px 5px #40404097;
+}
+
+.day .day3 {
+    padding-left: 5px;
+    font-size: 30px;
+    position: relative;
+    animation: day 10s linear infinite;
+}
+
+@keyframes day {
+    0% {
+        color: #d93a49;
+        text-shadow: 0 0 10px #d93a49;
+    }
+
+    12.5% {
+        color: #f15a22;
+        text-shadow: 0 0 10px #f15a22;
+    }
+
+    25% {
+        color: #fcaf17;
+        text-shadow: 0 0 10px #fcaf17;
+    }
+
+    37.5% {
+        color: #1d953f;
+        text-shadow: 0 0 10px #1d953f;
+    }
+
+    50% {
+        color: #009ad6;
+        text-shadow: 0 0 10px #009ad6;
+    }
+
+    62.5% {
+        color: #2a5caa;
+        text-shadow: 0 0 10px #2a5caa;
+    }
+
+    75% {
+        color: #6950a1;
+        text-shadow: 0 0 10px #6950a1;
+    }
+
+    100% {
+        color: #d93a49;
+        text-shadow: 0 0 10px #d93a49;
+    }
+}
+
+main .padding {
+    display: flex;
+    flex: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "aller";
+    font-size: 70px;
+    font-weight: medium;
+    color: #5bcddd;
+    text-shadow: 0 0 10px #4caab799;
+}
+
+main .padding-bottom {
+    display: flex;
+    flex: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-family: "torus";
+    color: #5bcddd;
+    text-shadow: 0 0 10px #4caab770;
+}
+
+main p {
+    margin: 5px;
+    text-align: center;
+    font-size: large;
+    font-family: system-ui;
+    color: #64ecff;
+    text-shadow: 0 0 8px #55c7d770;
+}
+
+main .weather {
+    display: flex;
+    justify-content: center;
+}
+
+#ww_d1098ce1e6f6c {
+    text-shadow: 5px 5px 10px #272727;
+}
+
+#ww_d1098ce1e6f6c_u {
+    visibility: hidden;
+}
+
+footer .slticon {
+    position: absolute;
+    bottom: 0;
+    font-size: 400px;
+    color: #c5c5c555
+        /* 555 */
+    ;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+footer ul li {
+    height: 130px;
+    margin: 0 5px;
+    flex-grow: 1;
+    backdrop-filter: blur(20px) brightness(100%);
+    border: 1px solid #ffffff70;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #404040;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+footer ul li:hover {
+    transform: translate(0, -30%);
+    backdrop-filter: blur(20px) brightness(130%);
+}
+
+footer ul li:active {
+    transform: translate(0, -25%);
+    box-shadow: none;
+    border: 1px solid #ffffff50;
+}
+
+footer ul li .icon {
+    position: relative;
+    line-height: 125px;
+    transition: 0.5s;
+    font-size: 40px;
+    color: rgb(196, 196, 196);
+    transform: translateZ(20px);
+    filter: drop-shadow(0 0 7px #2727278d);
+}
+
+footer ul li .text {
+    position: absolute;
+    font-size: 22px;
+    font-family: "torus";
+    color: rgb(196, 196, 196);
+    text-shadow: 0 0 5px #2727278d;
+    bottom: -10px;
+    transition: 0.25s;
+    transform: scale(0);
+}
+
+footer ul li:hover .icon {
+    transform: translateY(-20px);
+    filter: drop-shadow(0 0 7px #272727) brightness(120%);
+}
+
+footer ul li:hover .text {
+    transform: scale(1);
+    bottom: 30px;
+}
+
+footer ul li:active .icon {
+    filter: none;
+}
+
+footer ul li:active .text {
+    text-shadow: none;
+}
