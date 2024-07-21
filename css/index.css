@@ -89,6 +89,10 @@ header .h .search input:focus {
     border-bottom: 1px solid #42a5f5;
 }
 
+header .h .search input::placeholder{
+    font-family: "torus";
+}
+
 main {
     height: 50vh;
 }
@@ -233,6 +237,7 @@ footer ul li {
     height: 130px;
     margin: 0 5px;
     flex-grow: 1;
+    -webkit-backdrop-filter: blur(20px) brightness(100%);
     backdrop-filter: blur(20px) brightness(100%);
     border: 1px solid #ffffff70;
     border-bottom: none;
@@ -246,6 +251,7 @@ footer ul li {
 
 footer ul li:hover {
     transform: translate(0, -30%);
+    -webkit-backdrop-filter: blur(20px) brightness(100%);
     backdrop-filter: blur(20px) brightness(130%);
 }
 
