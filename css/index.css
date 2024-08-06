@@ -299,3 +299,13 @@ footer ul li:active .icon {
 footer ul li:active .text {
     text-shadow: none;
 }
+
+footer .sec {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 300px;
+    font-family: "torus";
+    color: #39c5bbcc;
+    text-shadow: 0 0 10px #39c5bbaa;
+}

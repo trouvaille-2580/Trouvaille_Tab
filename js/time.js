@@ -2,6 +2,7 @@ function time(){
     var time = new Date();
     var hour;
     var minute;
+    var second;
     var year;
     var month;
     var day;
@@ -23,7 +24,14 @@ function time(){
     }else{
         minute = tempm;
     }
+    var temps = time.getSeconds();
+    if(temps < 10 && temps >= 0 ){
+        second = "0" + temps;
+    }else{
+        second = temps;
+    }
     document.getElementById("time-hour").innerHTML = hour;
     document.getElementById("time-minute").innerHTML = minute;
+    document.getElementById("sec").innerHTML = second;
 }
 window.setInterval("time()", 1000);
